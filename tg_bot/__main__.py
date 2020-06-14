@@ -141,12 +141,12 @@ def send_start(bot, update):
     except:
         pass
     chat = update.effective_chat  # type: Optional[Chat]
-    text = " *Hey there! My name is Auditor* ✪ . I'm here to help you manage your CA Groups."
-    text += "\n\nBefore adding me to your group. you must take authorization from [Here](https://t.me/sushantgirdhar) if authorization is not taken ,Bot will be removed from your group." 
+    text = " *Hey there! My name is Auditor* ✪ by Ayush Jha, I'm here to help you manage your CA Groups."
+    text += "\n\nBefore adding me to your group. you must take authorization from [Here](https://t.me/ayushjha2911) if authorization is not taken ,Bot will be removed from your group." 
     
 
     
-    keyboard = [[InlineKeyboardButton(text="➕ Add me in your Group ➕", url="t.me/ebruiser_bot?startgroup=true")]]
+    keyboard = [[InlineKeyboardButton(text="➕ Add me in your Group ➕", url="t.me/ayushjha2911_bot?startgroup=true")]]
     keyboard += [[InlineKeyboardButton(text="📣Channel", url="https://t.me/ebruiser"), InlineKeyboardButton(text="❗Bans", url="https://t.me/castudentsfed")]]
     keyboard += [[InlineKeyboardButton(text="⚙️Help", callback_data="help_back"),InlineKeyboardButton(text="♠️Master",url="https://sushantgirdhar.github.io")]]
    
@@ -248,7 +248,7 @@ def get_help(bot: Bot, update: Update):
         update.effective_message.reply_text("Contact me in PM to get the list of possible commands.",
                                             reply_markup=InlineKeyboardMarkup(
                                                 [[InlineKeyboardButton(text="Help",url="t.me/{}?start=help".format(bot.username)),
-                                                InlineKeyboardButton(text="👥 Bot Channel",url="https://telegram.dog/ebruiser")]]))
+                                                InlineKeyboardButton(text="👥 Bot Channel",url="https://telegram.dog/ak_supBot18")]]))
         return
 
     elif len(args) >= 2 and any(args[1].lower() == x for x in HELPABLE):
